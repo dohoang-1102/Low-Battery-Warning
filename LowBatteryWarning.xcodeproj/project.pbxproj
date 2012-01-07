@@ -1,0 +1,236 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011C6BB414B7DE82006D6010 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011C6BB314B7DE82006D6010 /* Foundation.framework */; };
+		011C6BB714B7DE82006D6010 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 011C6BB614B7DE82006D6010 /* main.m */; };
+		011C6BBB14B7DE83006D6010 /* LowBatteryWarning.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 011C6BBA14B7DE83006D6010 /* LowBatteryWarning.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		011C6BAD14B7DE82006D6010 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				011C6BBB14B7DE83006D6010 /* LowBatteryWarning.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		011C6BAF14B7DE82006D6010 /* LowBatteryWarning */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LowBatteryWarning; sourceTree = BUILT_PRODUCTS_DIR; };
+		011C6BB314B7DE82006D6010 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		011C6BB614B7DE82006D6010 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		011C6BB914B7DE83006D6010 /* LowBatteryWarning-Prefix.pch */ = {isa = PBXFileReference; path = "LowBatteryWarning-Prefix.pch"; sourceTree = "<group>"; };
+		011C6BBA14B7DE83006D6010 /* LowBatteryWarning.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = LowBatteryWarning.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		011C6BAC14B7DE82006D6010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011C6BB414B7DE82006D6010 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011C6BA414B7DE80006D6010 = {
+			isa = PBXGroup;
+			children = (
+				011C6BB514B7DE82006D6010 /* LowBatteryWarning */,
+				011C6BB214B7DE82006D6010 /* Frameworks */,
+				011C6BB014B7DE82006D6010 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		011C6BB014B7DE82006D6010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				011C6BAF14B7DE82006D6010 /* LowBatteryWarning */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		011C6BB214B7DE82006D6010 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				011C6BB314B7DE82006D6010 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		011C6BB514B7DE82006D6010 /* LowBatteryWarning */ = {
+			isa = PBXGroup;
+			children = (
+				011C6BB614B7DE82006D6010 /* main.m */,
+				011C6BBA14B7DE83006D6010 /* LowBatteryWarning.1 */,
+				011C6BB814B7DE83006D6010 /* Supporting Files */,
+			);
+			path = LowBatteryWarning;
+			sourceTree = "<group>";
+		};
+		011C6BB814B7DE83006D6010 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				011C6BB914B7DE83006D6010 /* LowBatteryWarning-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		011C6BAE14B7DE82006D6010 /* LowBatteryWarning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011C6BBE14B7DE83006D6010 /* Build configuration list for PBXNativeTarget "LowBatteryWarning" */;
+			buildPhases = (
+				011C6BAB14B7DE82006D6010 /* Sources */,
+				011C6BAC14B7DE82006D6010 /* Frameworks */,
+				011C6BAD14B7DE82006D6010 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LowBatteryWarning;
+			productName = LowBatteryWarning;
+			productReference = 011C6BAF14B7DE82006D6010 /* LowBatteryWarning */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		011C6BA614B7DE80006D6010 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 011C6BA914B7DE80006D6010 /* Build configuration list for PBXProject "LowBatteryWarning" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 011C6BA414B7DE80006D6010;
+			productRefGroup = 011C6BB014B7DE82006D6010 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				011C6BAE14B7DE82006D6010 /* LowBatteryWarning */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		011C6BAB14B7DE82006D6010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011C6BB714B7DE82006D6010 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		011C6BBC14B7DE83006D6010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		011C6BBD14B7DE83006D6010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		011C6BBF14B7DE83006D6010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LowBatteryWarning/LowBatteryWarning-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		011C6BC014B7DE83006D6010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LowBatteryWarning/LowBatteryWarning-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		011C6BA914B7DE80006D6010 /* Build configuration list for PBXProject "LowBatteryWarning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011C6BBC14B7DE83006D6010 /* Debug */,
+				011C6BBD14B7DE83006D6010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		011C6BBE14B7DE83006D6010 /* Build configuration list for PBXNativeTarget "LowBatteryWarning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011C6BBF14B7DE83006D6010 /* Debug */,
+				011C6BC014B7DE83006D6010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 011C6BA614B7DE80006D6010 /* Project object */;
+}
