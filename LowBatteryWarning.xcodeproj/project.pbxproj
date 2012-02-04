@@ -11,6 +11,7 @@
 		011C6BB714B7DE82006D6010 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 011C6BB614B7DE82006D6010 /* main.m */; };
 		011C6BBB14B7DE83006D6010 /* LowBatteryWarning.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 011C6BBA14B7DE83006D6010 /* LowBatteryWarning.1 */; };
 		011C6BC214B7E1E7006D6010 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011C6BC114B7E1E7006D6010 /* IOKit.framework */; };
+		01EF889214DDCDEC00553EE9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EF889114DDCDEC00553EE9 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,7 +34,8 @@
 		011C6BB914B7DE83006D6010 /* LowBatteryWarning-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LowBatteryWarning-Prefix.pch"; sourceTree = "<group>"; };
 		011C6BBA14B7DE83006D6010 /* LowBatteryWarning.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = LowBatteryWarning.1; sourceTree = "<group>"; };
 		011C6BC114B7E1E7006D6010 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
-		01805BDF14C7873B00837107 /* nz.co.angrycactus.lowbatterymonitor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nz.co.angrycactus.lowbatterymonitor.plist; sourceTree = "<group>"; };
+		01805BDF14C7873B00837107 /* nz.co.angrycactus.lowbatterymonitor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = nz.co.angrycactus.lowbatterymonitor.plist; path = ../nz.co.angrycactus.lowbatterymonitor.plist; sourceTree = "<group>"; };
+		01EF889114DDCDEC00553EE9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01EF889214DDCDEC00553EE9 /* AudioToolbox.framework in Frameworks */,
 				010F2D6914B8F58E00EAEBF7 /* Foundation.framework in Frameworks */,
 				011C6BC214B7E1E7006D6010 /* IOKit.framework in Frameworks */,
 			);
@@ -52,9 +55,6 @@
 		011C6BA414B7DE80006D6010 = {
 			isa = PBXGroup;
 			children = (
-				01805BDF14C7873B00837107 /* nz.co.angrycactus.lowbatterymonitor.plist */,
-				010F2D6814B8F58E00EAEBF7 /* Foundation.framework */,
-				011C6BC114B7E1E7006D6010 /* IOKit.framework */,
 				011C6BB514B7DE82006D6010 /* LowBatteryWarning */,
 				011C6BB214B7DE82006D6010 /* Frameworks */,
 				011C6BB014B7DE82006D6010 /* Products */,
@@ -72,6 +72,9 @@
 		011C6BB214B7DE82006D6010 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01EF889114DDCDEC00553EE9 /* AudioToolbox.framework */,
+				010F2D6814B8F58E00EAEBF7 /* Foundation.framework */,
+				011C6BC114B7E1E7006D6010 /* IOKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -79,6 +82,7 @@
 		011C6BB514B7DE82006D6010 /* LowBatteryWarning */ = {
 			isa = PBXGroup;
 			children = (
+				01805BDF14C7873B00837107 /* nz.co.angrycactus.lowbatterymonitor.plist */,
 				011C6BB614B7DE82006D6010 /* main.m */,
 				011C6BBA14B7DE83006D6010 /* LowBatteryWarning.1 */,
 				011C6BB814B7DE83006D6010 /* Supporting Files */,

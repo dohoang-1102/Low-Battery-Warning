@@ -9,11 +9,15 @@
 #include <sandbox.h>
 
 #import <Foundation/Foundation.h>
-#import <getopt.h>
-#import <notify.h>
+
 #import <IOKit/pwr_mgt/IOPMLib.h>
 #import <IOKit/ps/IOPSKeys.h>
 #import <IOKit/ps/IOPowerSources.h>
+
+#import <AudioToolbox/AudioToolbox.h>
+
+#import <getopt.h>
+#import <notify.h>
 
 
 @interface CriticalBatteryMonitor : NSObject
@@ -87,8 +91,7 @@
 
 - (void)performBeep
 {
-    printf("\007");
-    fflush(stdout);
+    AudioServicesPlayAlertSound(kSystemSoundID_UserPreferredAlert);
 }
 
 
@@ -192,7 +195,8 @@ int main (int argc, char * argv[])
 {
     @autoreleasepool {
         CriticalBatteryMonitor* monitor = [CriticalBatteryMonitor new];
-
+        
+        // Enable sandboxing.
         char* error;
         int result = sandbox_init(kSBXProfileNoNetwork, SANDBOX_NAMED, &error);
         assert(result==0);
