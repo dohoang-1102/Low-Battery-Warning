@@ -1,0 +1,2 @@
+LowBatteryMonitor
+Background agent that sleeps your Mac laptop when it reaches 1% battery level. If I don't use this utility, my MacBook tends to die before it properly hibernates.
