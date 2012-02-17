@@ -5,8 +5,6 @@
 //  Created by Nicholas Hutchinson on 7/01/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
-#undef __APPLE_API_PRIVATE // FIXME: This is a workaround for a problem on the 10.7's SDK. 
-#include <sandbox.h>
 
 #import <Foundation/Foundation.h>
 
@@ -195,11 +193,6 @@ int main (int argc, char * argv[])
 {
     @autoreleasepool {
         CriticalBatteryMonitor* monitor = [CriticalBatteryMonitor new];
-        
-        // Enable sandboxing.
-        char* error;
-        int result = sandbox_init(kSBXProfileNoNetwork, SANDBOX_NAMED, &error);
-        assert(result==0);
         
         NSLog(@"Starting monitoring of battery levels...\n");
         
