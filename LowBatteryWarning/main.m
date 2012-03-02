@@ -17,6 +17,11 @@
 #import <getopt.h>
 #import <notify.h>
 
+// This define ought to be made public by IOKit--it's referenced by public headers!--but it ain't.
+// So we define it here.
+#ifndef kIOPMACPowerKey
+#define kIOPMACPowerKey                                 "AC Power"
+#endif
 
 @interface CriticalBatteryMonitor : NSObject
 - (void)startMonitoring;
@@ -124,8 +129,17 @@
     if (response == kCFUserNotificationAlternateResponse)
         return;
     
-    NSLog(@"MnLowBatteryWarning: low battery. Sending system to sleep...");
-    [self putSystemToSleep];
+    /* Has the user plugged in the power cable ? If so, cancel the sleep request */
+    NSString *ps = (__bridge NSString *)IOPSGetProvidingPowerSourceType(NULL);
+    if ([ps isEqualToString:@kIOPMACPowerKey]) {
+        return;
+        
+    } else {
+        NSLog(@"MnLowBatteryWarning: low battery. Sending system to sleep...");
+        [self putSystemToSleep];
+        
+    }
+
 }
 
 #pragma  mark -
