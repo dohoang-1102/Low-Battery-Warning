@@ -129,9 +129,20 @@
     if (response == kCFUserNotificationAlternateResponse)
         return;
     
+    CFTypeRef blob = IOPSCopyPowerSourcesInfo();
     /* Has the user plugged in the power cable ? If so, cancel the sleep request */
-    NSString *ps = (__bridge NSString *)IOPSGetProvidingPowerSourceType(NULL);
+    NSString *ps = (__bridge NSString *)IOPSGetProvidingPowerSourceType(blob);
+    CFRelease(blob), blob = NULL;
+    
     if ([ps isEqualToString:@kIOPMACPowerKey]) {
+        CFUserNotificationDisplayNotice(0, 
+                                        kCFUserNotificationNoteAlertLevel, 
+                                        NULL /* icon */, 
+                                        NULL /* URL */,
+                                        NULL /* Localization */, 
+                                        CFSTR("Sleep cancelled."), 
+                                        CFSTR("No need to sleep: your computer is connected to A/C power."), 
+                                        NULL /* default button */);
         return;
         
     } else {
